@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transfer - BlueVault</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="checkAuth()">
+
+<header>
+    <h1>BlueVault Digital Banking</h1>
+    <div>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </div>
+</header>
+
+<main class="transfer-wrapper">
+
+    <div class="transfer-card">
+        <h2>Fund Transfer</h2>
+        <p>Send money securely to another account.</p>
+
+        <div class="transfer-form">
+            <input type="text" id="beneficiary" placeholder="Beneficiary Account Number" required>
+            <input type="number" id="transferAmount" placeholder="Enter Amount" required>
+
+            <button onclick="transferMoney()">Transfer Now</button>
+
+            <p id="transferMessage"></p>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    © 2026 SecureBank. All Rights Reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

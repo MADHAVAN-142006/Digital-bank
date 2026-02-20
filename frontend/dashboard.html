@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - SecureBank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="initDashboard()">
+
+<header>
+    <h1>BlueVault Digital Banking</h1>
+    <div>
+        <a href="#" onclick="logout()">Logout</a>
+    </div>
+</header>
+
+<div class="layout">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h3>Menu</h3>
+        <ul>
+            <li class="active">Dashboard</li>
+            <li onclick="goToTransfer()">Transfer</li>
+            <li onclick="logout()">Logout</li>
+        </ul>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <div class="dashboard-container">
+
+            <!-- Account Summary -->
+            <div class="account-summary gradient-card">
+                <h2 id="welcomeText"></h2>
+                <p id="accountNumberText"></p>
+                <h3 id="balanceText"></h3>
+            </div>
+
+            <!-- Actions -->
+            <div class="actions">
+                <input type="number" id="amount" placeholder="Enter Amount">
+                <button onclick="deposit()">Deposit</button>
+                <button onclick="withdraw()">Withdraw</button>
+            </div>
+
+            <!-- Transactions -->
+            <div class="transaction-card">
+                <h3>Recent Transactions</h3>
+
+                <div class="transaction-scroll">
+                    <table class="transaction-table">
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Date & Time</th>
+                                <th style="text-align:right;">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody id="transactions"></tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2026 SecureBank. All Rights Reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
