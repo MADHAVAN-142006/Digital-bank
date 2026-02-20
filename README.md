@@ -224,5 +224,5 @@ UI/UX enhancements
 
 👨‍💻 Developer
 
-Anbu Sakthi S
-Email : anbusakthiseenivasan@gmail.com
+MADHAVAN S
+Email : madhavanamadhavan02267@gmail.com
